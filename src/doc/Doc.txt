@@ -1,0 +1,53 @@
+Programa: simulación manejo de inventario.
+
+- Propósito general
+Poner en práctica el manejo de la interfaz Map de Java, a través de una simulación básica.
+
+
+
+- Especificación de requerimientos
+Programa que cumpla satisfactoriamente las acciones de: 
+
+* Agregar un producto al inventario ingresando su nombre.
+* Aumentar el stock de un determinado producto.
+* Disminuir el stock de un determinado producto.
+* Mostrar todos los productos en el inventario con su stock correspondiente.
+* Eliminar un producto del inventario.
+* Ordenar los productos del inventario de forma ascendente.
+* Ordenar los productos del inventario de forma descendente.
+
+
+
+- Consideraciones 
+El programa debe manejar los siguientes escenarios:
+
+* Para el proceso de agregar productos: 
+Un mismo producto no puede ser agregado al inventario más de una vez.
+De no especificarse un nombre para el producto, debe asignarse como "Producto no especificado".
+
+* Para el proceso de aumentar/disminuir stock: 
+El producto correspondiente al stock que se desea aumentar debe existir en el inventario. 
+No se tienen en cuenta los valores numéricos menores a cero.
+No puede reducirse una cantidad de stock que supere a la cantidad actual de ese momento.
+Luego de realizar un aumento o decremento, el stock del producto debe actualizarse a la nueva cantidad.
+
+* Para el proceso de mostrar inventario:
+Se debe mostrar cada producto del inventario acompañado por su cantidad de stock actual.
+En caso de que el inventario se encuentre sin productos, debe informarse con un mensaje.
+
+* Para el proceso de eliminar un producto:
+Debe verificarse que el producto a eliminar exista en el inventario.
+En caso de no existir, debe informarse con un mensaje.
+
+* Para ordenar en forma ascendente/descendente:
+Ordenar por alfabeto en forma ascendente (A-Z) los productos del inventario.
+Ordenar por alfabeto en forma descendente (Z-A) los productos del inventario.
+En caso de que el inventario se encuentre sin productos, debe informarse con un mensaje.
+
+* Generales:
+1) El programa debe implementarse a través de un menú de opciones.
+2) Posteriormente a cada acción, el programa debe informar si dicha acción fue o no realizada con éxito.
+3) Modularizar para organizar y distribuir la funcionalidad completa en pequeñas unidades;
+   amén de tener un código más ordenado y visualmente entendible.
+4) Seguir buenas prácticas a la hora de nombrar variables y métodos; 
+   además de detallar el propósito general de cada método creado.
